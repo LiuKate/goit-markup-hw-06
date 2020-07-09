@@ -59,9 +59,76 @@
       <section class="hero">
         <div class="container">
           <h1 class="main-slogan">Эффективные решения для вашего бизнеса</h1>
-          <a href="" class="order-button">Заказать услугу</a>
-          <div class="backdrop">
-            <div class="modal"></div>
+          <div data-modal-open>
+            <button class="order-button">
+              Заказать услугу
+            </button>
+          </div>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <p class="modal-slogan">
+                Оставьте свои данные, мы вам перезвоним
+              </p>
+              <form class="modal-form">
+                <div class="modal-form-field">
+                  <input
+                    class="modal-form-input"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder=" "
+                  />
+                  <label class="modal-form-label" for="name">Имя</label>
+                </div>
+                <div class="modal-form-field">
+                  <input
+                    class="modal-form-input"
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    placeholder=" "
+                  />
+                  <label class="modal-form-label" for="tel">Телефон</label>
+                </div>
+                <div class="modal-form-field">
+                  <input
+                    class="modal-form-input"
+                    type="email"
+                    name="mail"
+                    id="mail"
+                    placeholder=" "
+                  />
+                  <label class="modal-form-label" for="mail">Почта</label>
+                </div>
+                <div class="modal-form-comment">
+                  <textarea
+                    class=""
+                    name="comment"
+                    id="comment"
+                    cols="50%"
+                    rows="10"
+                  ></textarea>
+                  <label class="modal-form-label" for="comment"
+                    >Комментарий</label
+                  >
+                </div>
+                <div class="modal-checkbox">
+                  <input
+                    type="checkbox"
+                    name="agreement"
+                    value="agreement"
+                    id="agreement"
+                  />
+                  <label for="agreement"
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a href="">Условия договора</a>
+                  </label>
+                </div>
+                <button type="submit" class="modal-submit" data-modal-close>
+                  Отправить
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -424,15 +491,10 @@
         </div>
         <div class="block-sign">
           <p class="sign">Подпишитесь на рассылку</p>
-          <!--<div class="sign-form">
-            <textarea name="E-mail"></textarea>
-            <input type="text" value="Подписаться"/>
-            <svg class="icon-send">
-              <use href="./images/sprite.svg#icon-send"></use>
-            </svg>
-          </div>-->
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
