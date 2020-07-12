@@ -79,6 +79,12 @@
                     placeholder=" "
                   />
                   <label class="modal-form-label" for="name">Имя</label>
+                  <span class="icon-modal-form"
+                    ><svg class="icon" width="12" height="12">
+                      <use
+                        href="./images/Sprite.svg#icon-person-form"
+                      ></use></svg
+                  ></span>
                 </div>
                 <div class="modal-form-field">
                   <input
@@ -89,6 +95,12 @@
                     placeholder=" "
                   />
                   <label class="modal-form-label" for="tel">Телефон</label>
+                  <span class="icon-modal-form"
+                    ><svg class="icon" width="14" height="14">
+                      <use
+                        href="./images/Sprite.svg#icon-phone-form"
+                      ></use></svg
+                  ></span>
                 </div>
                 <div class="modal-form-field">
                   <input
@@ -99,35 +111,46 @@
                     placeholder=" "
                   />
                   <label class="modal-form-label" for="mail">Почта</label>
+                  <span class="icon-modal-form"
+                    ><svg class="icon" width="16" height="12">
+                      <use href="./images/Sprite.svg#icon-mail-form"></use></svg
+                  ></span>
                 </div>
                 <div class="modal-form-comment">
                   <textarea
-                    class=""
+                    class="comment-area"
                     name="comment"
                     id="comment"
                     cols="50%"
                     rows="10"
+                    placeholder=" "
                   ></textarea>
-                  <label class="modal-form-label" for="comment"
+                  <label class="form-label-comment" for="comment"
                     >Комментарий</label
                   >
                 </div>
-                <div class="modal-checkbox">
+                <label class="agreement-checkbox">
                   <input
+                    class="checkbox visually-hidden"
                     type="checkbox"
                     name="agreement"
-                    value="agreement"
-                    id="agreement"
                   />
-                  <label for="agreement"
+                  <span class="checkbox-icon"></span>
+                  <span class="check-text"
                     >Соглашаюсь с рассылкой и принимаю
-                    <a href="">Условия договора</a>
-                  </label>
-                </div>
+                    <a class="agreement-link" href="#"
+                      >Условия договора</a
+                    ></span
+                  >
+                </label>
                 <button type="submit" class="modal-submit" data-modal-close>
                   Отправить
                 </button>
               </form>
+              <span class="close-form"
+                ><svg class="close-icon">
+                  <use href="./images/Sprite.svg#icon-close-form"></use></svg
+              ></span>
             </div>
           </div>
         </div>
@@ -491,6 +514,21 @@
         </div>
         <div class="block-sign">
           <p class="sign">Подпишитесь на рассылку</p>
+          <div class="sign-form">
+            <input
+              class="sign-input"
+              type="email"
+              name="mail"
+              placeholder="E-mail"
+            />
+            <button class="button-sign" type="submit">
+              Подписаться
+
+              <svg width="24" height="24">
+                <use href="./images/Sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
